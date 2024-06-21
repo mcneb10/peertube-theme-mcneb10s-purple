@@ -1,0 +1,146 @@
+:root {
+  --bs-border-color: #3d3f41;
+  --bs-link-color: #257bfd;
+  --bs-link-hover-color: #2467cc;
+}
+
+body {
+  --mainColor: #5d12d2;
+  --mainBackgroundColor: black;
+  --mainForegroundColor: #e0e0e1;
+  --mainBackgroundHoverColor: #fef3ec;
+
+  /* Compat with PeerTube < 3.2 */
+  --submenuColor: #202020;
+  --submenuBackgroundColor: #101010;
+
+  --inputForegroundColor: #e0e0e1;
+  --inputBackgroundColor: var(--mainBackgroundColor);
+  --inputPlaceholderColor: #d1d1d1;
+  --textareaForegroundColor: #e0e0e1;
+  --textareaBackgroundColor: var(--mainBackgroundColor);
+  --markdownTextareaBackgroundColor: #30363d;
+  --greyForegroundColor: #5d12d2;
+  --greyBackgroundColor: #101010;
+  --greySecondaryBackgroundColor: #4e4d4a;
+  --actionButtonColor: #bbb;
+  --activatedActionButtonColor: #fff;
+  --channelBackgroundColor: #303030;
+  --mainColorVeryLight: #7671d3;
+  --mainColorLighter: #7671e3;
+  --mainColorLightest: #7671d3;
+  --mainHoverColor: var(--mainColorLightest);
+  --inputBorderColor: #a5a5a5;
+  --hoverColor: #ffffff0d;
+}
+
+.dropdown-header {
+  color: var(--mainForegroundColor);
+}
+
+.dropdown-item:active {
+  background-color: var(--hoverColor) !important;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-hover-bg: var(--hoverColor) !important;
+}
+
+.dropdown-menu,
+.dropdown-divider {
+  border-color: var(--inputBorderColor);
+}
+
+.icon-logo {
+  background-color: var(--mainBackgroundColor);
+  background-origin: content-box;
+  border-radius: 20px;
+  min-height: 29px;
+  min-width: 29px;
+  padding: 3px 4px 3px 8px;
+
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjI3OTkgLTkxMSAxNiAyMiI+CiAgPGc+CiAgICA8cGF0aCBkPSJNMjc5OS05MTF2MTFsOC01IiBmaWxsPSJ2YXIoLS1tYWluRm9yZWdyb3VuZENvbG9yKSI+PC9wYXRoPgogICAgPHBhdGggZD0iTTI3OTktOTAwdjExbDgtNiIgZmlsbD0idmFyKC0tc3VibWVudUNvbG9yKSI+PC9wYXRoPgogICAgPHBhdGggZD0iTTI4MDctOTA1djEwbDgtNSIgZmlsbD0idmFyKC0tbWFpbkNvbG9yKSI+PC9wYXRoPgogICAgPHBhdGggZmlsbD0idHJhbnNwYXJlbnQiIGQ9Ik0yODA3LTg5NXYtMTBsLTggNXoiPjwvcGF0aD4KICA8L2c+Cjwvc3ZnPg==")
+    no-repeat !important;
+}
+
+.ng-dropdown-panel {
+  border-color: var(--inputBorderColor);
+}
+
+.ng-optgroup {
+  background-color: var(--mainBackgroundColor) !important;
+  color: var(--inputPlaceholderColor) !important;
+}
+
+.ng-option-marked,
+.ng-select-container,
+.ng-select-container.ng-has-value,
+.ng-select-container.ng-select-focused.ng-select-opened,
+.ng-select-multiple {
+  background-color: var(--mainBackgroundColor) !important;
+  color: var(--mainForegroundColor) !important;
+}
+
+.ng-option:hover,
+.ng-option.ng-option-selected {
+  background-color: #555 !important;
+  color: var(--mainForegroundColor) !important;
+}
+
+.ng-select-container .ng-arrow,
+.peertube-select-container::after {
+  border-top-color: var(--mainForegroundColor) !important;
+}
+
+.ng-select.ng-select.ng-select-opened > .ng-select-container .ng-arrow {
+  border-bottom-color: var(--mainForegroundColor) !important;
+}
+
+.notification {
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.notification svg,
+.notifications-header svg,
+.menu-link svg {
+  color: var(--greyForegroundColor) !important;
+}
+
+.notification.unread {
+  background-color: #ffffff0d !important;
+}
+
+.notifications-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: var(--greyForegroundColor) !important;
+}
+
+.popover {
+  --bs-popover-bg: var(--mainBackgroundColor) !important;
+  --bs-popover-body-color: var(--mainForegroundColor) !important;
+  --bs-popover-box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15) !important;
+  --bs-popover-header-color: var(--mainForegroundColor) !important;
+}
+
+.progress {
+  background-color: var(--greySecondaryBackgroundColor) !important;
+}
+
+.progress > span,
+.all-notifications,
+.notifications-header svg:hover,
+.menu-link:hover svg {
+  color: var(--mainForegroundColor) !important;
+}
+
+.root-header {
+  box-shadow: 0 1px 3px rgba(200, 200, 200, 0.1) !important;
+}
+
+input#search-video {
+  box-shadow: rgba(200, 200, 200, 0.1) 0 1px 20px 0 !important;
+}
+
+.logged-in-block {
+  background-color: var(--submenuBackgroundColor) !important;
+}
